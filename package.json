@@ -1,6 +1,6 @@
 {
   "name": "yampamper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,7 @@
   },
   "author": "Simon M. Werner",
   "license": "APSL-2.0",
+  "repository": "https://github.com/psiphi75/yampamper",
   "dependencies": {
     "mqtt": "^2.18.8"
   },
