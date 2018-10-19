@@ -1,0 +1,23 @@
+{
+  "name": "yampamper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simon M. Werner",
+  "license": "APSL-2.0",
+  "dependencies": {
+    "mqtt": "^2.18.8"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsdoc": "^3.8.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jsdoc": "^3.5.5",
+    "prettier": "^1.14.3"
+  }
+}
