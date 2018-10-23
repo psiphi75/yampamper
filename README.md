@@ -8,7 +8,7 @@ It's great for IoT devices like sensors to communicate with a central server.
 
 First you need an MQTT broker running somewhere, but you can use `mqtt://test.mosquitto.org` for testing.
 
-```JavaScript
+```js
 const Connection = require('yampamper');
 
 // Create the subscription
@@ -33,7 +33,7 @@ setInterval(() => pubConn.publish({ x: Math.random() }), 300);
 
 You can instatiate `Connection` with:
 
-```JavaScript
+```js
 {
   topic,      // Manditory: The topic to subscribe/publish to.
   url,        // Optional: The mqtt URL. Default is "mqtt://localhost".
