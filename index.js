@@ -97,6 +97,7 @@ class Connection {
       client.publish(topic, JSON.stringify(msg));
     };
 
+    let lastObj = null;
     /**
      * Subscribe to an event.
      *
@@ -122,9 +123,19 @@ class Connection {
         if (!checkSubCounter(obj)) {
           log.warn(`Dropping packet: ${msg}`);
         }
+        lastObj = Object.assign({}, obj.data);
         callback(null, obj.data);
       });
       return true;
+    };
+
+    /**
+     * Get the a copy of the last object we received.
+     *
+     * @returns {Object} - The the last object we received, or null if none has yet been received.
+     */
+    this.getLast = () => {
+      return lastObj;
     };
   }
 }
