@@ -1,6 +1,6 @@
 const mqtt = require('mqtt');
 
-const MQTT_BROKER_URL = 'mqtt://localhost';
+const MQTT_BROKER_URL = 'mqtt://localhost:1883';
 
 /**
  * A message encapusalated within a MQTT message.
@@ -139,4 +139,5 @@ class Connection {
     };
   }
 }
+
 module.exports = Connection;
